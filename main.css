@@ -172,6 +172,20 @@ to example projects. See kmbdg.com (KMB Design Group) */
   margin: 20vh 0 0 28em;
 }
 
+.bubbles-content-two {
+  font-family: "montserrat";
+  font-size: 1.9em;
+  width: 30%;
+  margin: 35vh 0 0 12em;
+}
+
+.bubbles-content-three {
+  font-family: "montserrat";
+  font-size: 1.5em;
+  width: 30%;
+  margin: 35vh 0 0 48em;
+}
+
 .bubbles-img-one {
   width:40vw;
   margin: 30vh 0 0 10vw;
