@@ -1,0 +1,488 @@
+body {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /*width: 100vw;*/
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+.background {
+  overflow: clip;
+  width: 100%;
+  min-width: 50rem;
+  text-align: center;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.headline{
+  width: 100%;
+  height: 85vh;
+  border: 0;
+  padding: 0;
+  margin: 0 0 0 0;
+  text-align: center;
+  overflow: clip;
+  background-color: rgba(138, 46, 46, 0.05);/* Must match sec-one background-color */
+}
+
+.wrap {
+  width: 100%;
+}
+
+.sec-one {
+  text-align: center;
+  font-family: "Rubik";
+  font-size: 2.5vh;
+  color: rgb(240, 248, 255);
+  padding: 2em 0 2em 0;
+  width: 100%;
+  height: 15%;
+  background-color: #2a2e45;/* Must match headline background-color */
+  border: none;
+  margin: 0 0 0 0;
+  z-index: 0;
+}
+
+.sec-one-divider {
+  margin: .25em 0 0 0;
+  position: absolute;
+  right: 0;
+
+  height: 35em;
+  overflow: visible;
+  z-index: 1;
+}
+
+.eng{
+  font-family: "Montserrat";
+  height: 15vh;
+  font-size: 2em;
+  font-weight: 400;
+  text-align: center;
+  align-content: center;
+}
+
+.why-contain{
+  font-family:"Monserrat";
+  display: grid;
+  grid-template-columns: 70vw 25vw;
+  width: 100vw;
+}
+
+.when {
+  font-family: "Montserrat";
+  padding: 3em 0 1.8em 2.5em;
+  font-size: 3em;
+  text-align: center;
+}
+
+.why {
+  font-family: Montserrat;
+  font-size: 1.8em;
+  /*line-height: 3.1em;
+  list-style: square;*/
+  align-content: center;
+  border: solid #55555536;
+}
+
+.poles {
+  border-width: 0 .01em .01em 0;
+}
+
+.cad {
+  border-width: 0 0 .01em .01em;
+}
+
+.found {
+  border-width: .01em .01em 0 0;
+}
+
+.energy {
+  border-width: .01em 0 0 .01em;
+}
+
+.why-left {
+  display: grid;
+  grid-template:
+  "a b"
+  "c d";
+  text-align: center;
+  padding: 0 0 0 5vw;
+}
+
+.why-right {
+  width: 100%;
+}
+
+.bubbles-section {
+  margin: 8em 0 0 0;
+  height: 120em;
+  background-image: url(media/Bubbles.svg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* Content is In-Development. The goal is to have tabs that 
+open summaries our our work is different sectors with a link 
+to example projects. See kmbdg.com (KMB Design Group) */
+.services-contact-links {
+  height: 15%;
+  width: 100%;
+  background-color: #2a2e45;
+}
+
+.detail-container {
+  display: grid;
+  grid-area: 
+  "a b"
+  "c c";
+  width: 100%;
+  height: 41em;
+  margin: 4em 0 0 0;
+  padding: 4em 0 0 0;
+  background-color: #8b8b8b1e;
+  background-image: url(/media/Style_Bar_9.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.dropcap {
+  font-family: "Montserrat";
+  font-size: 2.5em;
+  padding: 5em 0 0 3em;
+  font-weight: 500;
+}
+
+.bubbles-content-one {
+  font-family: "montserrat";
+  font-size: 2.2em;
+  width: 30%;
+  margin: 20vh 0 0 28em;
+}
+
+.bubbles-img-one {
+  width:40vw;
+  margin: 30vh 0 0 10vw;
+}
+
+.structural-analysis-content {
+  font-family: "montserrat";
+  font-size: 2.2em;
+  grid-area: b;
+}
+
+.sec-two {
+
+  font-family: "Montserrat";
+  font-weight: 500;
+  padding: 4em 0 0 3em;
+  font-size: 2em;
+
+  text-align: center;
+  display: grid;
+  width: 65%;
+  grid-template: 
+  "title title"
+  "struct tower"
+  "cad-bim tower-map"
+  ;
+  gap: 3em;
+
+  /*
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 1.5em;
+  grid-auto-rows: minmax(10em, auto);
+  padding: 2em 4em;
+  background-color: rgba(224, 224, 224, 0.05);/* Must match headline background-color
+  */
+}
+
+.title {
+  grid-area: title;
+
+}
+
+.struct {
+  grid-area: struct;
+}
+
+.tower {
+  grid-area: tower;
+}
+
+.cad-bim {
+  grid-area: cad-bim;
+}
+
+.tower-map {
+  grid-area: tower-map;
+}
+
+.sec-three {
+  margin: 3.15em 0 0 0;
+  padding: 0 2vw 1.5em 2vw;
+  font-family: "rubik";
+  font-size: 2em;
+  background-color: #9aa3f821;
+  display: grid;
+  grid-template:
+  "three-title three-title three-title"
+  "one-contain-content model two-contain-content" 
+  "one-contain-content model two-contain-content"/ 1fr .5fr 1fr;
+  width: 96vw;
+}
+
+.three-title {
+  font-size: 1em;
+  grid-area: three-title;
+  text-align: center;
+  padding: 2em 0 2em 0;
+}
+
+.content-title {
+  padding: 3em 0 0 0;
+  text-align: center;
+  font-size: .9em;
+}
+
+.p1-content-title {
+  grid-area: contain-content;
+}
+
+.p2-content-title {
+  grid-area: contain-content;
+}
+
+.content-text {
+  font-size: .8em;
+}
+
+.p1-content-text {
+  grid-area: contain-content;
+  padding: 1em 3em 0 3em;
+}
+
+.p2-content-text {
+  grid-area: contain-content;
+  padding: 0em 1.5em 0 1.5em;
+}
+
+.model {
+  height: 130vh;
+  grid-area: model;
+  display: block;
+  margin: auto;
+}
+
+.divider {
+  width: 100%;
+}
+
+.card {
+  border-radius: 1.25em;
+  box-shadow: 0.01em 0.01em .1em .02em rgba(56, 56, 56, 0.185);
+  background-color: rgba(255, 255, 255, 0.945);
+  padding: 1.2em 1em 1.2em 1em;
+  font-family: "Montserrat";
+  min-height: 12em;
+  position: relative;
+}
+
+.two-title {
+margin: 0 0 .5em 0;
+padding: 0 0 0 0;
+font-size: 1.3em;
+
+}
+
+.two-title-with-subtitle {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  font-size: 1.3em;
+}
+
+.two-text {
+font-size: 1.15em;
+border-top: .05em solid #333333;
+padding: .6em 0 0 0;
+}
+
+/* Structural Analysis */
+
+.structural-analysis {
+  padding: 1em 1em 0 1em;
+}
+
+.structural-analysis-title {
+
+}
+
+.structural-analysis-content {
+  
+}
+
+
+/* Grid IDs */
+#struct {
+
+}
+
+#struct-portfolio {
+  background-image: url(./media/062D4321-tower.jpg);
+  background-size: auto 2fr;
+  grid-row: 1/3;
+  grid-column: 1;
+  transform-origin: ;
+}
+
+#energy-media {
+  background-image: url(./media/pexels-sergei-a-1322276-2539462.jpg);
+  background-size: auto 2fr;
+  grid-row: 2/3;
+  grid-column: 3;
+  background-size: 100%;
+}
+
+#cad-media {
+  background-image: url(./media/pexels-thisisengineering-3862379.jpg);
+  background-size: auto 2fr;
+  grid-row: 3;
+  grid-column: 2;
+  background-size: 100%;
+}
+
+.media-text {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 1.5em;
+  background-color: rgba(255, 241, 230, 0.7);
+  padding: .2em .3em .3em .4em;
+  box-shadow: .2em .2em rgba(255, 241, 230, 0.7);
+  border-radius: .2em 0 0 0;
+}
+
+.tower-media-text {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  font-size: 1.5em;
+  background-color: rgba(255, 241, 230, 0.7);
+  padding: .2em .3em .3em .4em;
+  box-shadow: .2em .2em rgba(255, 241, 230, 0.7);
+  border-radius: .2em 0 0 0;
+  text-align: center;
+}
+
+#footer {
+  background-color: #2a2e45;
+  color: aliceblue;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  margin: 0 0 0 0;
+  font-family: "Montserrat";
+}
+
+.home-p1 {
+  padding: 0 10em 0 5em;
+}
+
+.home-p2 {
+  font-size: 1.2em;
+  line-height: 1.4em;
+}
+
+.address {
+  line-height: 1.4em;
+}
+
+.contact {
+  margin: 1.5em 0 0 0;
+}
+
+.head {
+  font-size: 30px;
+  margin: 10px 10px 0 10px;
+}
+
+.written-by {
+  font-size: 15px;
+  margin: 0 0 10px 40px;
+}
+
+.c1 {
+  font-size: 22px;
+  margin: 10px;
+}
+
+.c2 {
+  font-size: 18px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.c3 {
+  font-size: 20px;
+  padding: 10px;
+  margin: 0 50px 10px 20px;
+}
+
+.footer {
+  border-top: 3px solid rgb(87, 0, 0);
+  background-color: rgb(246, 241, 241);
+  padding: 10px;
+  text-align: center;
+}
+
+/*10/16/24 */
+
+
+
+/* Classes for Main Services grid */
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 80px;
+  border-radius: 50px;
+  margin: 10px 100px 0 180px;
+}
+
+.main-grid-form {
+  background-color: rgb(247, 244, 244);
+  display: grid;
+  grid-template-rows: 150px 1fr 1fr;
+  column-gap: 30px;
+  padding: 30px;
+  border-radius: 50px;
+  margin: 40px 10px 0 10px;
+  place-items: center;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+}
+
+.grid-image {
+  width: 100px;
+}
+
+.main-grid-title {
+  font-size: 25px;
+}
+
+li {
+  list-style-type: none;
+}
