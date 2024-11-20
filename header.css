@@ -58,19 +58,12 @@ body {
   column-gap: 2em;
 }
 
-.right {
-
-}
 
 .right-text {
   text-align: end;
   padding: 0 5em 0 0;
-  font-size: 1.25em;
+  font-size: 1.4em;
   font-family: "Rubik";
-}
-
-.nav a {
-
 }
 
 .dropdown {
